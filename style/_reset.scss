@@ -1,0 +1,54 @@
+@import "./var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: $textFont;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+input, select, textarea, button {
+    font-family: $textFont;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (max-width: 1440px) {
+        width: 90%;
+    }
+}

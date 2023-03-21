@@ -1,0 +1,106 @@
+.contact_us{
+
+.dialog-container,
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.lightbox {
+ 
+}
+
+.dialog-content {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px 32px;
+    border-radius: 5px;
+    width: 480px;
+  h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $textColor;
+    margin-bottom: 16px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $textColor;
+    margin-bottom: 24px;
+  }
+
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    input, textarea{
+        padding:19px 16px;
+        border: none;
+        background-color: $light;
+        border-bottom: 1px solid #dedede;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        outline: none;
+        resize: none;
+    }
+
+  }
+
+  &-btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+
+    #close-dialog-btn{
+        color: $orange;
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    #send-msg-btn{
+        padding: 12px 20px;
+        background-color: $orange;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+  }
+
+
+
+// X button for close dialog
+  #x-dialog-btn{
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    cursor: pointer;
+  }
+
+  @include deviceMQ('mobile'){
+    width: 328px;
+    padding: 20px 24px;
+
+    top: 69%;
+  }
+}
+
+
+
+
+}

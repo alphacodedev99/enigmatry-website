@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pronađite najbolje cijene bicikala i dodatne opreme. Naša trgovina nudi širok asortiman bicikala za sve vrste vožnje.">
+    <meta name="keywords" content="bicikli, biciklizam, prodaja bicikala, MTB, gradski bicikl">
+    <meta name="author" content="Tihomir Milenkovic">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/index.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Enigmatry - Website</title>
+</head>
+<body>
+
+    <!-- navbar start here -->
+    <header class="header_navbar">
+        <div class="container">
+            <div class="navbar_mobile">
+                <i class="fa-solid fa-bars fa-lg" style="color: #fff;"></i>
+            </div>
+            <h1 class="logo">LOGO</h1>
+            <div class="navbar">
+                <nav class="navbar_items">
+                    <a href="/" class="active">Products</a>
+                    <a href="/">Services</a>
+                    <a href="/">About us</a>
+                    <a href="/" id="open-dialog-btn">Contact</a>
+                </nav>
+                <div class="navbar_search">
+                    <input type="text" class="navbar_search_input" placeholder="Search" />
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+            </div>
+            <div class="user">
+                <i class="fa-regular fa-user fa-lg" style="color: #fff;"></i>
+                <i class="fa-regular fa-heart fa-lg" style="color: #fff;"></i>
+                <div class="user_cart">
+                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fff" aria-label="cart-shop"></i>
+                    <div class="user_cart_count">1</div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <!-- product item start here -->
+   <article class="product container">
+        <div class="product_path">
+            <a href="/">Home</a>
+            <i class="fa-solid fa-chevron-right" style="color: #1E1E1E;"></i>
+            <a href="/">Products</a>
+            <i class="fa-solid fa-chevron-right" style="color: #1E1E1E;"></i>
+            <a href="/">Bikes</a>
+            <i class="fa-solid fa-chevron-right" style="color: #1E1E1E;"></i>
+        </div>
+        <!-- product header start here -->
+        <div class="product_header">
+            <h3 class="product_header_title">Product name lorem ipsum</h3>
+            <div class="product_header_icons">
+                <i class="fa-solid fa-arrow-left" style="color: #1E1E1E"></i>
+                <i class="fa-solid fa-arrow-right" style="color: #1E1E1E"></i>
+                <i class="fa-regular fa-heart fa-lg" style="color: #1E1E1E"></i>
+                <i class="fa-solid fa-share-nodes" style="color: #1E1E1E"></i>
+            </div>
+        </div>
+        <!-- product section start here -->
+        <div class="product_content">
+            <div class="product_content_left">
+                <img src="./images/productBike.png" alt="bike_product">
+                <div class="leftIcon">
+                    <i class="fa-solid fa-chevron-left fa-lg" style="color: #1E1E1E;"></i>
+                </div>
+                <div class="rightIcon">
+                    <i class="fa-solid fa-chevron-right fa-lg" style="color: #1E1E1E;"></i>
+                </div>
+            </div>
+            <div class="product_content_right">
+                <p class="stock" aria-live>In stock <span> - only 2 left</span></p>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="product_content_right_selectBox">
+                    <div class="select_box_item">
+                        <div class="select_box_options">
+                            <span class="select_title">Model</span>
+                            <p class="select_container">
+                                Gents - Medium
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down" style="color: #1E1E1E;"></i>
+                    </div>
+                    <div class="select_box_item">
+                        <div class="select_box_options">
+                            <span class="select_title">Color</span>
+                            <p class="select_container">
+                                Black
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down" style="color: #1E1E1E;"></i>
+                    </div>
+                </div>
+
+                <div class="check_options_first">
+                    <input type="checkbox" class="checkInput" id="lorem" checked="checked">
+                    <label for="lorem">Add option lorem ipsum</label>
+                </div>
+                <div class="check_options_second">
+                    <input type="checkbox" class="checkInput" id="lorem2" style="background-color: green;">
+                    <label for="lorem2">Add option autpat velit cano totam rem aperiam</label>
+                </div>
+
+                <div class="buttons">
+                    <button class="addToCart">Add to cart</button>
+                    <button class="contactUs">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <!-- product specification start here -->
+        <div class="product_specification">
+            <p>Description</p>
+            <p>Specifications</p>
+            <p>Reviews (7)</p>
+        </div>
+   </article>
+   <!-- separator line start here -->
+   <hr style="border-top: 1px solid #dedede;">
+   <!-- product section (description) start here -->
+   <section class="product_description">
+        <div class="container">
+            <div class="product_description_about">
+                <h3>Product description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                </p>
+                <button class="btn_more">More info</button>
+            </div>
+            <div class="product_description_image" aria-hidden>
+                <img src="./images/productDescription.png" alt="">
+            </div>
+        </div>
+   </section>
+   <!-- tehnical specification of products -->
+   <section class="product_tech_specification">
+    <div class="container">
+    <table aria-describedby>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Frame Size</th>
+            <th>Weight</th>
+            <th class="disabled_mobile">Max Speed</th>
+            <th class="disabled_mobile">Battery</th>
+            <th class="disabled_mobile">Engine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ladies - Small</td>
+            <td>50 cm</td>
+            <td>24 kg</td>
+            <td class="disabled_mobile">45 km/h</td>
+            <td class="disabled_mobile">625 kWh</td>
+            <td class="disabled_mobile">Bosch Performance Line Speed</td>
+          </tr>
+          <tr>
+            <td>Ladies - Medium</td>
+            <td>55 cm</td>
+            <td>25 kg</td>
+            <td class="disabled_mobile">45 km/h</td>
+            <td class="disabled_mobile">625 kWh</td>
+            <td class="disabled_mobile">Bosch Performance Line Speed</td>
+          </tr>
+          <tr>
+            <td>Ladies - Large</td>
+            <td>60 cm</td>
+            <td>26 kg</td>
+            <td class="disabled_mobile">45 km/h</td>
+            <td class="disabled_mobile">625 kWh</td>
+            <td class="disabled_mobile">Bosch Performance Line Speed</td>
+          </tr>
+          <tr>
+            <td>Ladies - Small</td>
+            <td>50 cm</td>
+            <td>24 kg</td>
+            <td class="disabled_mobile">45 km/h</td>
+            <td class="disabled_mobile">625 kWh</td>
+            <td class="disabled_mobile">Bosch Performance Line Speed</td>
+          </tr>
+          <tr>
+            <td>Ladies - Medium</td>
+            <td>55 cm</td>
+            <td>25 kg</td>
+            <td class="disabled_mobile">45 km/h</td>
+            <td class="disabled_mobile">625 kWh</td>
+            <td class="disabled_mobile">Bosch Performance Line Speed</td>
+          </tr>
+          <tr>
+            <td>Ladies - Large</td>
+            <td>60 cm</td>
+            <td>26 kg</td>
+            <td class="disabled_mobile">45 km/h</td>
+            <td class="disabled_mobile">625 kWh</td>
+            <td class="disabled_mobile">Bosch Performance Line Speed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   </section>
+
+
+
+   <section class="contact_us">
+        <div id="lightbox" class="lightbox"></div>
+
+        <div id="contact-dialog" class="dialog-container">
+        <div class="dialog-content">
+            <h2>Contact Us</h2>
+            <p>We’ll get back to you as soon as possible.</p>
+            <form>
+                <input type="email" placeholder="Your e-mail">
+                <textarea  name="" id="" maxlength="220" cols="20" rows="7" placeholder="Your message"></textarea>
+            </form>
+            <button id="x-dialog-btn">
+                <i class="fa-solid fa-xmark fa-lg" style="color: #1E1E1E"></i>
+            </button>
+            <div class="dialog-content-btn">
+                <button id="close-dialog-btn">Cancel</button>
+                <button id="send-msg-btn">Send message</button>
+             </div>
+        </div>
+        </div>
+   </section>
+
+   <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.product_tech_specification{
+    padding: 39px 0 88px 0;
+    background-color: $light;
+    table{
+        width: 100%;
+        background-color: transparent;
+        border-collapse: collapse;
+
+        thead{
+            text-align: left;
+            height: 40px;
+            color: $orange;
+
+            tr{
+                th:first-child{
+                    padding-left: 20px;
+                }
+                th{
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+        }
+        tbody{
+            tr:nth-child(odd) {
+                background-color: $white;
+            }
+            tr{
+                
+                display: table-row;
+                height: 40px;
+                td:first-child{
+                    padding-left: 20px;
+                }
+                td{
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: $textColor;
+                }
+            }
+        }
+
+        @include deviceMQ('mobile'){
+            .disabled_mobile{
+                display: none;
+            }
+        }
+    }
+}
